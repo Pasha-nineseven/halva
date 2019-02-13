@@ -70,6 +70,12 @@ $(document).ready(function() {
         });
     };
 
+    //form-mobile-toggle
+    $('body').on('click','.js-page-form-mobile-show', function(e){
+        e.preventDefault();
+        $(this).parents('.page-form-mobile__toggle').hide();
+        $('.page-form-mobile').find('.page-form').fadeIn();
+    });
 });
 
 

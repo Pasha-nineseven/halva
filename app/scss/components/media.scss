@@ -42,6 +42,9 @@
 	.registration__wrap {
 	    max-width: 100%;
 	}
+	.page-form-mobile{
+		display: block;
+	}
 }
 
 
@@ -183,5 +186,17 @@
 	}
 	.page-top-slider-info__item {
 	    max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.page-form-mobile__card {
+	    width: 107px;
+	    height: 80px;
+	}
+	.page-form-mobile{
+		.btn{
+			padding: 4px 10px;
+		}
 	}
 }
