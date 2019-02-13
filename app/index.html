@@ -10,36 +10,427 @@
 		<link href="css/libs.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
 	<body>
 		<!--LAYOUT-->
 		<div class="layout">
-			<header class="page-header">
-				<div class="container-fluid">
-					page-header
-				</div>
-			</header>
-			<div class="wrapper">
-				<div class="page-content workarea">
-					<!-- CONTENT-PART -->
+			<div class="page-top">
+				<header class="page-header">
 					<div class="container-fluid">
-						<div class="row">
-							<div class="col-sm-3">3</div>
-							<div class="col-sm-9">9</div>
+						<a href="#" class="top-logo"></a>
+					</div>
+				</header>
+				<div class="page-form-wrap">
+					<div class="page-form">
+						<form action="#" method="post">
+							<div class="page-form__title">
+								Готовы осуществить мечты?
+							</div>
+							<div class="input-wrap">
+								<div class="input-title">Фамилия</div>
+								<input type="text">
+							</div>
+							<div class="input-wrap">
+								<div class="input-title">Имя</div>
+								<input type="text">
+							</div>
+							<div class="input-wrap input-wrap--error">
+								<div class="input-title input-title--error">Имя — неверно введен формат поля</div>
+								<input type="text">
+							</div>
+							<div class="input-wrap">
+								<div class="switch">
+							     	<input id="radio-a" type="radio" name="switch" checked="checked"/>
+							      	<input id="radio-b" type="radio" name="switch"/>
+							      	<label for="radio-b">
+							      		Согласен с <a href="#">правилами обработки персональных данных</a>
+							      	</label>
+							      	<span class="toggle-outside">
+							      		<span class="toggle-inside"></span>
+							      	</span>
+							    </div>
+							</div>
+							<div class="page-form-submit">
+								<input type="submit" class="page-form-submit__btn btn" value="Оформить карту">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="page-card-wrap">
+					<div class="page-card__inner">
+						<div class="page-card">
+							<img src="img/content/card.png" alt="">
 						</div>
 					</div>
 				</div>
-				<!--end CONTENT-PART -->
+				<div class="page-top-slider">
+					<div class="page-top-slider__item">
+						<div class="page-top-slider__bg" style="background-image: url(../img/content/slide1.jpg);"></div>
+						<div class="container-fluid">
+							<div class="page-top-slider__content">
+								<div class="page-top-slider__title">
+									Рассрочка без процентов и первого взноса
+								</div>
+								<div class="page-top-slider-pager">
+									<ul>
+										<li class="page-top-slider-pager__item active slide-0">
+											<a href="#">
+												Путешествие
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-1">
+											<a href="#">
+												Товары детям
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-2">
+											<a href="#">
+												Авто
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-3">
+											<a href="#">
+												Подарки
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="page-top-slider-info">
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>24</span> месяца
+										</div>
+										на оплату покупок
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>22 000</span>
+										</div>
+										магазинов партнеров
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>Бесплатная</span>
+										</div>
+										доставка карты за 1 день
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-top-slider__item">
+						<div class="page-top-slider__bg" style="background-image: url(../img/content/slide2.jpg);"></div>
+						<div class="container-fluid">
+							<div class="page-top-slider__content">
+								<div class="page-top-slider__title">
+									Рассрочка без процентов и первого взноса
+								</div>
+								<div class="page-top-slider-pager">
+									<ul>
+										<li class="page-top-slider-pager__item slide-0">
+											<a href="#">
+												Путешествие
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-1">
+											<a href="#">
+												Товары детям
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-2">
+											<a href="#">
+												Авто
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-3">
+											<a href="#">
+												Подарки
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="page-top-slider-info">
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>24</span> месяца
+										</div>
+										на оплату покупок
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>22 000</span>
+										</div>
+										магазинов партнеров
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>Бесплатная</span>
+										</div>
+										доставка карты за 1 день
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-top-slider__item">
+						<div class="page-top-slider__bg" style="background-image: url(../img/content/slide3.jpg);"></div>
+						<div class="container-fluid">
+							<div class="page-top-slider__content">
+								<div class="page-top-slider__title">
+									Рассрочка без процентов и первого взноса
+								</div>
+								<div class="page-top-slider-pager">
+									<ul>
+										<li class="page-top-slider-pager__item slide-0">
+											<a href="#">
+												Путешествие
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-1">
+											<a href="#">
+												Товары детям
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-2">
+											<a href="#">
+												Авто
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-3">
+											<a href="#">
+												Подарки
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="page-top-slider-info">
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>24</span> месяца
+										</div>
+										на оплату покупок
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>22 000</span>
+										</div>
+										магазинов партнеров
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>Бесплатная</span>
+										</div>
+										доставка карты за 1 день
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-top-slider__item">
+						<div class="page-top-slider__bg" style="background-image: url(../img/content/slide4.jpg);"></div>
+						<div class="container-fluid">
+							<div class="page-top-slider__content">
+								<div class="page-top-slider__title">
+									Рассрочка без процентов и первого взноса
+								</div>
+								<div class="page-top-slider-pager">
+									<ul>
+										<li class="page-top-slider-pager__item slide-0">
+											<a href="#">
+												Путешествие
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-1">
+											<a href="#">
+												Товары детям
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-2">
+											<a href="#">
+												Авто
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+										<li class="page-top-slider-pager__item slide-3">
+											<a href="#">
+												Подарки
+											</a>
+											<div class="page-top-slider-progress-wrap">
+												<div class="page-top-slider-progress"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="page-top-slider-info">
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>24</span> месяца
+										</div>
+										на оплату покупок
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>22 000</span>
+										</div>
+										магазинов партнеров
+									</div>
+									<div class="page-top-slider-info__item">
+										<div class="page-top-slider-info__top">
+											<span>Бесплатная</span>
+										</div>
+										доставка карты за 1 день
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-content">
+					<!-- CONTENT-PART -->
+					<div class="how">
+						<div class="container-fluid">
+							<h2>Как это работает?</h2>
+							<ol class="how-steps">
+								<li class="how-steps__item">
+									<div class="how-steps__title">
+										Кредитный лимит – деньги банка
+									</div>
+									<div class="how-steps__txt">
+										Банк предварительно «договаривается» с торговыми сетями и магазинами, где можно использовать эту карту
+									</div>
+								</li>
+								<li class="how-steps__item">
+									<div class="how-steps__title">
+										Покупка без первого взноса
+									</div>
+									<div class="how-steps__txt">
+										В течение месяца вы совершаете различные покупки в рассрочку в сети магазинов-партнеров
+									</div>
+								</li>
+								<li class="how-steps__item">
+									<div class="how-steps__title">
+										Свои деньги
+									</div>
+									<div class="how-steps__txt">
+										При желании можно пополнить карту Халва своими деньгами и рассчитываться ею
+									</div>
+								</li>
+								<li class="how-steps__item">
+									<div class="how-steps__title">
+										Рассчитывайтесь картой Халва вне сети партнеров
+									</div>
+									<div class="how-steps__txt">
+										Рассчитаться за покупки картой Халва теперь можно не только в магазинах-партнерах
+									</div>
+								</li>
+								<li class="how-steps__item">
+									<div class="how-steps__title">
+										Покупка товаров в рассрочку
+									</div>
+									<div class="how-steps__txt">
+										Можете расплачиваться за приобретенные покупки не сразу, а частями и не платить при этом никаких процентов
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="registration">
+						<div class="container-fluid">
+							<div class="registration__wrap">
+								<h2>Как оформить карту</h2>
+								<div class="registration__info">
+									С картой Халва вы сможете купить в рассрочку все, что надо — от продуктов до строительных материалов и не платить проценты
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="partners">
+						<div class="container-fluid">
+							<div class="partners__list">
+								<div class="partners__item">
+									<img src="img/partners/partner1.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partner2.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partner3.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partner4.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partner5.png" alt="">
+								</div>
+								<div class="partners__item">
+									<img src="img/partners/partner6.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
 			</div>
 			<footer class="page-footer">
 				<div class="container-fluid">
-					footer
+					<div class="page-footer__wrap">
+						<div class="page-footer__logo"></div>
+						<div class="page-footer__copyright">
+							© ЗАО «МТБанк». Все права защищены. Лицензия на осуществление банковской деятельности №13 от 06.05.2013г.
+							Юридический адрес: ул. Толстого, 10, 220007, г. Минск
+						</div>
+					</div>
 				</div>
 			</footer>
-			
 		</div><!-- END LAYOUT-->
 
 		<script src="js/libs.min.js"></script>

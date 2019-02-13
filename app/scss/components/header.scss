@@ -1,4 +1,12 @@
 .page-header{
-
+	padding: 50px 0 30px;
+	    position: relative;
+    z-index: 4; 
 }
 
+.top-logo{
+	width: 226px;
+	height: 41px;
+	background: url(../img/svg/logo.svg) no-repeat;
+	display: inline-block;
+}

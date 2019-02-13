@@ -1,3 +1,31 @@
 .page-footer{
-	
+	background: #fff;
+	 
+	color: #32161A;
+}
+
+.page-footer__wrap{
+	max-width: 880px;
+	display: flex;
+	align-items:center;
+	//flex-wrap:wrap;
+	border-top: 1px solid #DED6C3;
+	padding: 38px 0;
+}
+
+
+.page-footer__copyright{
+	//padding-right: 30px;
+	font-size: 14px;
+	max-width: 500px;
+	    line-height: 1.2;
+}
+
+.page-footer__logo{
+	width: 221px;
+	min-width: 221px;
+	height: 72px;
+	background: url(../img/content/mtbank.png) no-repeat;
+	background-size: cover;
+	margin-right: 109px;
 }
