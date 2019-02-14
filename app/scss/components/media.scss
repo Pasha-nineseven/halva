@@ -47,6 +47,7 @@
 	}
 	.layout{
 		position: relative;
+		padding-bottom: 80px;
 	}
 }
 
@@ -201,16 +202,16 @@
 	    font-size: 24px;
 	}
 	.page-top-slider-info__item {
-	    max-width: 50%;
+	    width: 100%;
 	}
 	.page-change__link {
-	    padding: 4px 6px;
+	    padding: 4px 20px;
 	}
 	.page-change__link span:after {
 	    margin-left: 4px;
 	}
 	.page-change {
-	    margin-left: 7px;
+	    margin-left: 20px;
 	    margin-top: -15px;
 	}
 }
@@ -224,5 +225,18 @@
 		.btn{
 			padding: 4px 10px;
 		}
+	}
+	.layout{
+		padding-bottom: 68px;
+	}
+}
+
+
+@media screen and (max-width: 350px){
+	.page-change__link {
+	    padding: 4px 3px;
+	}
+	.page-change {
+	    margin-left: 7px;
 	}
 }
