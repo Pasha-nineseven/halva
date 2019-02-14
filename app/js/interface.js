@@ -107,7 +107,20 @@ $(document).ready(function() {
         $('.page-form-mobile').find('.page-form').fadeOut();
     });
 
-    
+    //page-links-toggle
+    $('body').on('click','.js-page-change__link', function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.page-change__list').slideToggle(200);
+    });
+    $(document).click(function (e){
+        var div = $(".page-change");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.js-page-change__link').removeClass('active');
+            $('.page-change__list').slideUp(200);
+        }
+    })
 });
 
 
