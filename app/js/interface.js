@@ -53,7 +53,31 @@ $(document).ready(function() {
             });
             clearTimeout(tick);
         }
+
+        function pauseProgressbar(){
+            $bar.css({
+                width: percentTime + "%"
+            });
+            isPause = true;
+        }
+        function continueProgressbar() {
+            isPause = false;
+        }
+
         startProgressbar();
+
+
+        //TOP BG CHANGE
+        $(".js-bg-change").mouseover(function(e){
+            e.preventDefault();
+            var bg = $(this).data('bg');
+            $(this).parents('.page-top-slider__item').find(".page-top-slider__bg").css('background-image', 'url(' + bg + ')');
+            pauseProgressbar()
+        });
+        $(".js-bg-change").mouseout(function(e){
+            e.preventDefault();
+            continueProgressbar();
+        });
     };
 
 
@@ -76,10 +100,17 @@ $(document).ready(function() {
         $(this).parents('.page-form-mobile__toggle').hide();
         $('.page-form-mobile').find('.page-form').fadeIn();
     });
+    //form-mobile-close
+    $('body').on('click','.js-page-form__close', function(e){
+        e.preventDefault();
+        $('.page-form-mobile__toggle').show();
+        $('.page-form-mobile').find('.page-form').fadeOut();
+    });
+
+    
 });
 
 
-//on scolling, show/animate timeline blocks when enter the viewport
 
 
 
