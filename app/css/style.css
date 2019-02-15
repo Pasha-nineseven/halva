@@ -750,8 +750,10 @@ _::-webkit-full-page-media, _:future, :root .how:after {
 
 .page-form-mobile {
   display: none;
+  position: fixed;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 15; }
   .page-form-mobile .page-form {
     display: none;
     padding: 15px;
@@ -854,7 +856,8 @@ _::-webkit-full-page-media, _:future, :root .how:after {
   .page-form-mobile {
     display: block; }
   .layout {
-    position: relative; } }
+    position: relative;
+    padding-bottom: 80px; } }
 
 @media screen and (max-width: 850px) {
   .partners__item {
@@ -971,14 +974,20 @@ _::-webkit-full-page-media, _:future, :root .how:after {
   .page-top-slider-info__item span {
     font-size: 24px; }
   .page-top-slider-info__item {
-    width: 100%; }
+    width: 100%;
+    padding: 10px 10px 13px 10px; }
   .page-change__link {
     padding: 4px 20px; }
   .page-change__link span:after {
     margin-left: 4px; }
   .page-change {
     margin-left: 20px;
-    margin-top: -15px; } }
+    margin-top: -15px; }
+  .page-top-slider__title {
+    font-size: 30px;
+    margin-bottom: 15px; }
+  .page-top-slider__item {
+    padding-top: 75px; } }
 
 @media screen and (max-width: 400px) {
   .page-form-mobile__card {
@@ -986,6 +995,8 @@ _::-webkit-full-page-media, _:future, :root .how:after {
     height: 80px; }
   .page-form-mobile .btn {
     padding: 4px 10px; }
+  .layout {
+    padding-bottom: 68px; }
   .top-logo {
     width: 110px;
     height: 21px; } }
