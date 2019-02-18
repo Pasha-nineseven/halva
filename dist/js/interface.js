@@ -129,6 +129,22 @@ $(document).ready(function() {
 
 $(window).on('scroll', function(){
 	activatePoints();
+
+
+    var target = $('.registration');
+    var targetPos = target.offset().top;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    $(window).scroll(function(){
+        var winScrollTop = $(this).scrollTop()-400;
+        if(winScrollTop > scrollToElem){
+            ///alert(1);
+            $('.page-form-mobile').hide();
+        }
+        else{
+            $('.page-form-mobile').show();
+        }
+    });
 });
 
 
