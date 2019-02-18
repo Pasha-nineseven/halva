@@ -9,22 +9,117 @@
 
 
 //MEDIA
+
+
+@media screen and (max-width: 1400px){
+	.page-card__inner {
+	    padding-right: 28px;
+	}
+}
+
 @media screen and (max-width: 1350px){
 	.container-fluid{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	.page-form-submit {
+	    padding-left: 0;
+	    text-align: right;
+	}
+	.page-form__title {
+	    font-size: 24px;
+	}
+	.page-form {
+	    padding: 15px 12px;
+	    width: 300px;
+	}
+	.page-card__inner {
+	    text-align: right;
+	}
+	.page-card{
+		width: 360px;
+    	display: inline-block;
+    	img{
+    		max-width: 100%;
+    	}
+	}
+}
+
+
+@media screen and (max-width: 1300px){
+	.page-top-slider-info__item span {
+	    font-size: 38px;
+	}
 }
 
 @media screen and (max-width: 1250px){
 	.page-card-wrap{
-		z-index: 1;
+		//z-index: 1;
 	}
 }
 
 @media screen and (max-width: 1200px){
 	.page-card-wrap {
-	    max-width: 900px;
+	    //max-width: 900px;
+	}
+	.page-top-slider-info__item span {
+	    font-size: 34px;
+	}
+	.page-card__inner {
+	    padding-right: 85px;
+	}
+	.page-card {
+	    width: 315px;
+	}
+	.page-top-slider__title{
+		font-size: 48px;
+	}
+	h1{
+		font-size: 48px;
+	}
+	h2{
+		font-size: 48px;
+	}
+	.how-steps__title {
+	    font-size: 24px;
+	}
+	.how-steps__txt{
+		font-size: 14px;
+	}
+	.how-steps__item:before {
+	    font-size: 32px;
+	    width: 60px;
+	    height: 60px;
+	}
+	.how-steps__item {
+	    padding-left: 75px;
+	}
+	.btn {
+	    padding: 7px 17px;
+	    font-size: 14px;
+	}
+	.partners {
+	    padding-right: 320px;
+	}
+	.page-footer__wrap {
+	    width: calc(100% - 320px);
+	}
+	.page-top-slider-info {
+	    max-width: 480px;
+	    flex-wrap: wrap;
+	}
+	.page-top-slider-info__item {
+	    margin-bottom: 2px;
+	}
+	.how-steps {
+	    max-width: calc(100% - 635px);
+	}
+}
+
+
+@media screen and (max-width: 1100px){
+	.page-card__inner {
+	    padding-right: 135px;
 	}
 }
 
@@ -47,7 +142,16 @@
 	}
 	.layout{
 		position: relative;
-		padding-bottom: 80px;
+		//padding-bottom: 80px;
+	}
+	.partners {
+	    padding-right: 0;
+	}
+	.page-footer__wrap{
+		width: 100%;
+	}
+	.page-top-slider-info {
+	    max-width: 100%;
 	}
 }
 
@@ -91,7 +195,7 @@
 		font-size: 44px;
 	}
 	.registration {
-	    padding: 18px 0 60px;
+	    padding: 20px 0;
 	}
 	.registration h2 {
 	    margin-bottom: 20px;
@@ -102,12 +206,7 @@
 	.how h2{
 		margin-bottom: 20px;
 	}
-	.how-steps__item:before{
-		width: 72px;
-		height: 72px;
-	}
 	.how-steps__item {
-	    padding-left: 83px;
 	    margin-bottom: 25px;
 	    &:last-child{
 	    	margin-bottom: 0;
@@ -174,6 +273,9 @@
 	    margin-left: 30px;
 	    margin-top: -20px;
 	}
+	.btn{
+		font-size: 18px;
+	}
 }
 
 
@@ -230,13 +332,13 @@
 	    width: 107px;
 	    height: 80px;
 	}
-	.page-form-mobile{
-		.btn{
-			padding: 4px 10px;
-		}
-	}
+	// .page-form-mobile{
+	// 	.btn{
+	// 		padding: 4px 10px;
+	// 	}
+	// }
 	.layout{
-		padding-bottom: 68px;
+		//padding-bottom: 68px;
 	}
 	.top-logo {
 	    width: 110px;

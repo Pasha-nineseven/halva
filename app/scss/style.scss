@@ -686,20 +686,12 @@ _::-webkit-full-page-media, _:future, :root .how:after{
 
 .page-form-mobile{
 	display: none;
-	position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 15;
 	.page-form{
-		display: none;
-		padding: 15px;
+		//display: none;
+		padding: 20px 0 0;
 	    height: 100%;
 	    width: 100%;
-	    position: fixed;
-	    bottom: 0;
-	    left: 0;
-	    top: 0;
-	    background: #32161a;
+	    background: transparent;
 		&:after{
 			display: none;
 		}
@@ -707,6 +699,18 @@ _::-webkit-full-page-media, _:future, :root .how:after{
 	.page-form-submit {
 	    padding-left: 0;
 	    text-align: right;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+	    border-bottom: 1px solid rgba(50, 22, 26, 0.2);
+	    color: #000;
+	}
+	.switch label{
+		color: #000;
+	}
+	.toggle-outside {
+	    background: rgba(0, 0, 0, 0.2);
 	}
 }
 
