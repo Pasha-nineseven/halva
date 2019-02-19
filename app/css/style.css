@@ -932,7 +932,7 @@ _::-webkit-full-page-media, _:future, :root .how:after {
   .registration__info {
     max-width: 380px; } }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .page-form-wrap,
   .page-card-wrap {
     display: none; }
@@ -1085,7 +1085,12 @@ _::-webkit-full-page-media, _:future, :root .how:after {
     font-size: 30px;
     margin-bottom: 15px; }
   .page-top-slider__item {
-    padding-top: 75px; } }
+    padding-top: 75px; }
+  .page-top-slider {
+    height: 100vh; }
+    .page-top-slider .slick-list,
+    .page-top-slider .slick-track {
+      height: 100%; } }
 
 @media screen and (max-width: 400px) {
   .page-form-mobile__card {
